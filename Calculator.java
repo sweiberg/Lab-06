@@ -10,6 +10,26 @@ public class Calculator {
         System.out.print("Input your second integer: ");
         int y = scan.nextInt();
 
-        System.out.print("Result of Addition: " + (x + y));
+        System.out.println();
+        System.out.println("Calculator Menu");
+        System.out.println("--------------");
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println();
+
+        System.out.print("Select an option: ");
+        int choice = scan.nextInt();
+
+        switch (choice) {
+            case 1:
+                System.out.println("Result of Addition: " + (x + y));
+                break;
+            case 2:
+                System.out.println("Result of Subtraction: " + (x - y));
+                break;
+            default:
+                System.out.println("There was an error with your selection");
+                break;
+        }
     }
 }
